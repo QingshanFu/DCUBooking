@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DCUDataModelStoreContainer" CdmEntityContainer="DCUModelContainer">
+    <EntitySetMapping Name="Set_Holiday">
+      <EntityTypeMapping TypeName="IsTypeOf(DCUDataModel.Set_Holiday)">
+        <MappingFragment StoreEntitySet="Set_Holiday">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="HolidayType" ColumnName="HolidayType" />
+          <ScalarProperty Name="IsWorkDay" ColumnName="IsWorkDay" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

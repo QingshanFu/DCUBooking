@@ -1,0 +1,13 @@
+﻿[2018-06-05 15:21:24] 处理程序开始运行。
+[2018-06-05 15:21:24] 数据库连接字符串: data source=.;initial catalog=MCCOData;User ID=sa;Password=1111
+[2018-06-05 15:21:24] 数据库重连次数: 5
+[2018-06-05 15:21:24] 邮件抄送列表: v-lufli
+[2018-06-05 15:21:24] 邮件模板路径: D:\Center1Booking\MailTemplate
+[2018-06-05 15:21:24] MCCO 主页地址: http://keenfupc
+[2018-06-05 15:21:24] 开始执行 ConnectDatabase...
+[2018-06-05 15:21:35] 邮件服务器：apj.cloudmail.microsoft.com
+[2018-06-05 15:21:35] 邮箱账号：shareddatademo@outlook.com
+[2018-06-05 15:21:35] 邮箱密码：Password01!
+[2018-06-05 15:21:35] 开始处理邮件任务。ID=20025;业务类型=4;RequestID=50
+[2018-06-05 15:21:35] 开始发送邮件。
+[2018-06-05 15:21:42] 开始初始化 EWS Services.

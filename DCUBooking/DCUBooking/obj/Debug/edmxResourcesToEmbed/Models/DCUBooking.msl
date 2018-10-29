@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DCUDataModelStoreContainer" CdmEntityContainer="DCUModelContainer">
+    <EntitySetMapping Name="Dic_Business">
+      <EntityTypeMapping TypeName="DCUDataModel.Dic_Business">
+        <MappingFragment StoreEntitySet="Dic_Business">
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dic_CustomSegment">
+      <EntityTypeMapping TypeName="DCUDataModel.Dic_CustomSegment">
+        <MappingFragment StoreEntitySet="Dic_CustomSegment">
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dic_DCUUser">
+      <EntityTypeMapping TypeName="DCUDataModel.Dic_DCUUser">
+        <MappingFragment StoreEntitySet="Dic_DCUUser">
+          <ScalarProperty Name="PermissionType" ColumnName="PermissionType" />
+          <ScalarProperty Name="Alias" ColumnName="Alias" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dic_EventTheme">
+      <EntityTypeMapping TypeName="DCUDataModel.Dic_EventTheme">
+        <MappingFragment StoreEntitySet="Dic_EventTheme">
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dic_EventType">
+      <EntityTypeMapping TypeName="DCUDataModel.Dic_EventType">
+        <MappingFragment StoreEntitySet="Dic_EventType">
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dic_Horizontal">
+      <EntityTypeMapping TypeName="DCUDataModel.Dic_Horizontal">
+        <MappingFragment StoreEntitySet="Dic_Horizontal">
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dic_Industry">
+      <EntityTypeMapping TypeName="DCUDataModel.Dic_Industry">
+        <MappingFragment StoreEntitySet="Dic_Industry">
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dic_Language">
+      <EntityTypeMapping TypeName="DCUDataModel.Dic_Language">
+        <MappingFragment StoreEntitySet="Dic_Language">
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dic_OpportunityType">
+      <EntityTypeMapping TypeName="DCUDataModel.Dic_OpportunityType">
+        <MappingFragment StoreEntitySet="Dic_OpportunityType">
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dic_RequestGroup">
+      <EntityTypeMapping TypeName="DCUDataModel.Dic_RequestGroup">
+        <MappingFragment StoreEntitySet="Dic_RequestGroup">
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dic_SaleStage">
+      <EntityTypeMapping TypeName="DCUDataModel.Dic_SaleStage">
+        <MappingFragment StoreEntitySet="Dic_SaleStage">
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dic_Technology">
+      <EntityTypeMapping TypeName="DCUDataModel.Dic_Technology">
+        <MappingFragment StoreEntitySet="Dic_Technology">
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Set_Holiday">
+      <EntityTypeMapping TypeName="DCUDataModel.Set_Holiday">
+        <MappingFragment StoreEntitySet="Set_Holiday">
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="IsWorkDay" ColumnName="IsWorkDay" />
+          <ScalarProperty Name="HolidayType" ColumnName="HolidayType" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Set_ShowTime">
+      <EntityTypeMapping TypeName="DCUDataModel.Set_ShowTime">
+        <MappingFragment StoreEntitySet="Set_ShowTime">
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Available" ColumnName="Available" />
+          <ScalarProperty Name="SpecifiedDate" ColumnName="SpecifiedDate" />
+          <ScalarProperty Name="IsRegular" ColumnName="IsRegular" />
+          <ScalarProperty Name="SettingType" ColumnName="SettingType" />
+          <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="Week" ColumnName="Week" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sys_MailTask">
+      <EntityTypeMapping TypeName="DCUDataModel.Sys_MailTask">
+        <MappingFragment StoreEntitySet="Sys_MailTask">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="SendTime" ColumnName="SendTime" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+          <ScalarProperty Name="EmailType" ColumnName="EmailType" />
+          <ScalarProperty Name="RequestType" ColumnName="RequestType" />
+          <ScalarProperty Name="RecordID" ColumnName="RecordID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sys_OperationLogs">
+      <EntityTypeMapping TypeName="DCUDataModel.Sys_OperationLogs">
+        <MappingFragment StoreEntitySet="Sys_OperationLogs">
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+          <ScalarProperty Name="Operator" ColumnName="Operator" />
+          <ScalarProperty Name="RecordID" ColumnName="RecordID" />
+          <ScalarProperty Name="OperationType" ColumnName="OperationType" />
+          <ScalarProperty Name="BusinessType" ColumnName="BusinessType" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sys_RoomsReservedInfo">
+      <EntityTypeMapping TypeName="DCUDataModel.Sys_RoomsReservedInfo">
+        <MappingFragment StoreEntitySet="Sys_RoomsReservedInfo">
+          <ScalarProperty Name="SourceTour" ColumnName="SourceTour" />
+          <ScalarProperty Name="TourType" ColumnName="TourType" />
+          <ScalarProperty Name="LockedTime" ColumnName="LockedTime" />
+          <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="VisitDate" ColumnName="VisitDate" />
+          <ScalarProperty Name="PlaceID" ColumnName="PlaceID" />
+          <ScalarProperty Name="RecordID" ColumnName="RecordID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sys_CalendarRecord">
+      <EntityTypeMapping TypeName="DCUDataModel.Sys_CalendarRecord">
+        <MappingFragment StoreEntitySet="Sys_CalendarRecord">
+          <ScalarProperty Name="UID" ColumnName="UID" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="RecordID" ColumnName="RecordID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PlaceRequestRecords">
+      <EntityTypeMapping TypeName="DCUDataModel.PlaceRequestRecords">
+        <MappingFragment StoreEntitySet="PlaceRequestRecords">
+          <ScalarProperty Name="UserInfoFile" ColumnName="UserInfoFile" />
+          <ScalarProperty Name="ApprovedTime" ColumnName="ApprovedTime" />
+          <ScalarProperty Name="ApprovedBy" ColumnName="ApprovedBy" />
+          <ScalarProperty Name="RequestTime" ColumnName="RequestTime" />
+          <ScalarProperty Name="CompanyBackground" ColumnName="CompanyBackground" />
+          <ScalarProperty Name="InterestTopic" ColumnName="InterestTopic" />
+          <ScalarProperty Name="ExpectEndTime" ColumnName="ExpectEndTime" />
+          <ScalarProperty Name="ExpectStartTime" ColumnName="ExpectStartTime" />
+          <ScalarProperty Name="OPPID" ColumnName="OPPID" />
+          <ScalarProperty Name="BusinessImpact" ColumnName="BusinessImpact" />
+          <ScalarProperty Name="BusinessPurpose" ColumnName="BusinessPurpose" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="RequestType" ColumnName="RequestType" />
+          <ScalarProperty Name="VisitorLanguageID" ColumnName="VisitorLanguageID" />
+          <ScalarProperty Name="VisitorGroupSize" ColumnName="VisitorGroupSize" />
+          <ScalarProperty Name="VisitorIndustryID" ColumnName="VisitorIndustryID" />
+          <ScalarProperty Name="VisitorOrganizationSize" ColumnName="VisitorOrganizationSize" />
+          <ScalarProperty Name="VisitorOrganizationName" ColumnName="VisitorOrganizationName" />
+          <ScalarProperty Name="RequesterBusinessID" ColumnName="RequesterBusinessID" />
+          <ScalarProperty Name="RequesterFunctionTeam" ColumnName="RequesterFunctionTeam" />
+          <ScalarProperty Name="RequestSubGroupID" ColumnName="RequestSubGroupID" />
+          <ScalarProperty Name="RequestGroupID" ColumnName="RequestGroupID" />
+          <ScalarProperty Name="RequesterOnbehalfof" ColumnName="RequesterOnbehalfof" />
+          <ScalarProperty Name="RequesterName" ColumnName="RequesterName" />
+          <ScalarProperty Name="VisitEndTime" ColumnName="VisitEndTime" />
+          <ScalarProperty Name="VisitStartTime" ColumnName="VisitStartTime" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

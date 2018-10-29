@@ -1,0 +1,7 @@
+D:\Projects\MCCOMail\MCCOMailHandler\MCCOMailHandler\bin\Release\MCCOMailHandler.exe.config
+D:\Projects\MCCOMail\MCCOMailHandler\MCCOMailHandler\bin\Release\MCCOMailHandler.exe
+D:\Projects\MCCOMail\MCCOMailHandler\MCCOMailHandler\bin\Release\MCCOMailHandler.pdb
+D:\Projects\MCCOMail\MCCOMailHandler\MCCOMailHandler\bin\Release\Microsoft.Exchange.WebServices.dll
+D:\Projects\MCCOMail\MCCOMailHandler\MCCOMailHandler\bin\Release\Microsoft.Exchange.WebServices.xml
+D:\Projects\MCCOMail\MCCOMailHandler\MCCOMailHandler\obj\Release\MCCOMailHandler.exe
+D:\Projects\MCCOMail\MCCOMailHandler\MCCOMailHandler\obj\Release\MCCOMailHandler.pdb

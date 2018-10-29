@@ -1,0 +1,58 @@
+﻿@model IEnumerable<DCUBooking.Models.Set_Holiday>
+
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    ViewBag.Title = "Index";
+    var index = 0;
+}
+
+<br />
+<h2>Holiday Configuration</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HolidayType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsWorkDay)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Remarks)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    //var color = "white";
+    //index++;
+    //if (index%2 == 0)
+    //{
+    //    color = "#f8f8f8";
+    //}
+    <tr style="background-color:">
+        <td>
+            @Html.DisplayFor(modelItem => item.DateString)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HolidayType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsWorkDay)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Remarks)
+        </td>
+        <td>
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,15 @@
+﻿[2018-06-04 15:07:41] 处理程序开始运行。
+[2018-06-04 15:07:41] 数据库连接字符串: data source=.;initial catalog=MCCOData;User ID=sa;Password=1111
+[2018-06-04 15:07:41] 数据库重连次数: 5
+[2018-06-04 15:07:41] 邮件抄送列表: v-lufli
+[2018-06-04 15:07:41] 邮件模板路径: D:\Center1Booking\MailTemplate
+[2018-06-04 15:07:41] MCCO 主页地址: http://keenfupc
+[2018-06-04 15:07:41] 开始执行 ConnectDatabase...
+[2018-06-04 15:07:42] 邮件服务器：apj.cloudmail.microsoft.com
+[2018-06-04 15:07:42] 邮箱账号：v-qingfu@microsoft.com
+[2018-06-04 15:07:42] 邮箱密码：Keendom!340403
+[2018-06-04 15:08:12] 开始处理邮件任务。ID=20023;业务类型=4;RequestID=49
+[2018-06-04 15:08:12] 开始发送邮件。
+[2018-06-04 15:08:14] 开始初始化 EWS Services.
+[2018-06-04 15:08:15] The request failed. The remote server returned an error: (401) Unauthorized.
+[2018-06-04 15:08:15] 邮件任务完成。ID=20023

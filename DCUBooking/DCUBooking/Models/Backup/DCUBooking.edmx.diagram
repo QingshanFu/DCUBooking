@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="917c8434340f4c24a423948ba4dff336" Name="Diagram1" ZoomLevel="57" >
+        <EntityTypeShape EntityType="DCUDataModel.Dic_Business" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="DCUDataModel.Dic_CustomSegment" Width="1.5" PointX="2.75" PointY="0.75" />
+        <EntityTypeShape EntityType="DCUDataModel.Dic_DCUUser" Width="1.5" PointX="0.75" PointY="3.75" />
+        <EntityTypeShape EntityType="DCUDataModel.Dic_EventTheme" Width="1.5" PointX="2.75" PointY="3.75" />
+        <EntityTypeShape EntityType="DCUDataModel.Dic_EventType" Width="1.5" PointX="4.75" PointY="0.75" />
+        <EntityTypeShape EntityType="DCUDataModel.Dic_Horizontal" Width="1.5" PointX="4.75" PointY="3.75" />
+        <EntityTypeShape EntityType="DCUDataModel.Dic_Industry" Width="1.5" PointX="6.75" PointY="0.75" />
+        <EntityTypeShape EntityType="DCUDataModel.Dic_Language" Width="1.5" PointX="0.75" PointY="6.75" />
+        <EntityTypeShape EntityType="DCUDataModel.Dic_OpportunityType" Width="1.5" PointX="2.75" PointY="6.75" />
+        <EntityTypeShape EntityType="DCUDataModel.Dic_RequestGroup" Width="1.5" PointX="6.75" PointY="3.75" />
+        <EntityTypeShape EntityType="DCUDataModel.Dic_SaleStage" Width="1.5" PointX="4.75" PointY="6.75" />
+        <EntityTypeShape EntityType="DCUDataModel.Dic_Technology" Width="1.5" PointX="6.75" PointY="6.75" />
+        <EntityTypeShape EntityType="DCUDataModel.Set_Holiday" Width="1.5" PointX="8.75" PointY="7.75" />
+        <EntityTypeShape EntityType="DCUDataModel.Set_ShowTime" Width="1.5" PointX="0.75" PointY="9.75" />
+        <EntityTypeShape EntityType="DCUDataModel.Sys_MailTask" Width="1.5" PointX="2.75" PointY="9.75" />
+        <EntityTypeShape EntityType="DCUDataModel.Sys_OperationLogs" Width="1.5" PointX="4.75" PointY="9.75" />
+        <EntityTypeShape EntityType="DCUDataModel.Sys_RoomsReservedInfo" Width="1.5" PointX="10.75" PointY="0.75" />
+        <EntityTypeShape EntityType="DCUDataModel.Sys_CalendarRecord" Width="1.5" PointX="10.75" PointY="4.75" />
+        <EntityTypeShape EntityType="DCUDataModel.PlaceRequestRecords" Width="1.5" PointX="8.75" PointY="0.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

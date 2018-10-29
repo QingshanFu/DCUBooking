@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="DCUDataModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="DCUModelContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Dic_Business" EntityType="DCUDataModel.Dic_Business" />
+    <EntitySet Name="Dic_CustomSegment" EntityType="DCUDataModel.Dic_CustomSegment" />
+    <EntitySet Name="Dic_DCUUser" EntityType="DCUDataModel.Dic_DCUUser" />
+    <EntitySet Name="Dic_EventTheme" EntityType="DCUDataModel.Dic_EventTheme" />
+    <EntitySet Name="Dic_EventType" EntityType="DCUDataModel.Dic_EventType" />
+    <EntitySet Name="Dic_Horizontal" EntityType="DCUDataModel.Dic_Horizontal" />
+    <EntitySet Name="Dic_Industry" EntityType="DCUDataModel.Dic_Industry" />
+    <EntitySet Name="Dic_Language" EntityType="DCUDataModel.Dic_Language" />
+    <EntitySet Name="Dic_OpportunityType" EntityType="DCUDataModel.Dic_OpportunityType" />
+    <EntitySet Name="Dic_RequestGroup" EntityType="DCUDataModel.Dic_RequestGroup" />
+    <EntitySet Name="Dic_SaleStage" EntityType="DCUDataModel.Dic_SaleStage" />
+    <EntitySet Name="Dic_Technology" EntityType="DCUDataModel.Dic_Technology" />
+    <EntitySet Name="Set_Holiday" EntityType="DCUDataModel.Set_Holiday" />
+    <EntitySet Name="Set_ShowTime" EntityType="DCUDataModel.Set_ShowTime" />
+    <EntitySet Name="Sys_MailTask" EntityType="DCUDataModel.Sys_MailTask" />
+    <EntitySet Name="Sys_OperationLogs" EntityType="DCUDataModel.Sys_OperationLogs" />
+    <EntitySet Name="Sys_RoomsReservedInfo" EntityType="DCUDataModel.Sys_RoomsReservedInfo" />
+    <EntitySet Name="Sys_CalendarRecord" EntityType="DCUDataModel.Sys_CalendarRecord" />
+    <EntitySet Name="PlaceRequestRecords" EntityType="DCUDataModel.PlaceRequestRecords" />
+  </EntityContainer>
+  <EntityType Name="Dic_Business">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Deleted" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Dic_CustomSegment">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Deleted" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Dic_DCUUser">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Alias" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="PermissionType" Type="Byte" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Dic_EventTheme">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="Deleted" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Dic_EventType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="Deleted" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Dic_Horizontal">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Deleted" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Dic_Industry">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Deleted" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Dic_Language">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Byte" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Deleted" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Dic_OpportunityType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Deleted" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Dic_RequestGroup">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ParentID" Type="Int32" />
+    <Property Name="Deleted" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Dic_SaleStage">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Deleted" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Dic_Technology">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Deleted" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Set_Holiday">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="HolidayType" Type="String" Nullable="false" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="IsWorkDay" Type="Boolean" Nullable="false" />
+    <Property Name="Remarks" Type="String" MaxLength="1024" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Set_ShowTime">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Week" Type="Byte" Nullable="false" />
+    <Property Name="StartTime" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="EndTime" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="SettingType" Type="Byte" Nullable="false" />
+    <Property Name="IsRegular" Type="Boolean" Nullable="false" />
+    <Property Name="SpecifiedDate" Type="DateTime" Precision="0" />
+    <Property Name="Available" Type="Boolean" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="Remarks" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Sys_MailTask">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RecordID" Type="Int64" Nullable="false" />
+    <Property Name="RequestType" Type="Int32" Nullable="false" />
+    <Property Name="EmailType" Type="Int32" Nullable="false" />
+    <Property Name="CreateTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="SendTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Status" Type="Byte" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Sys_OperationLogs">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BusinessType" Type="Int32" Nullable="false" />
+    <Property Name="OperationType" Type="Int32" Nullable="false" />
+    <Property Name="RecordID" Type="Int64" Nullable="false" />
+    <Property Name="Operator" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreateTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Remarks" Type="String" MaxLength="1024" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Sys_RoomsReservedInfo">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RecordID" Type="Int64" Nullable="false" />
+    <Property Name="PlaceID" Type="Byte" Nullable="false" />
+    <Property Name="VisitDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="StartTime" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="EndTime" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="LockedTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="TourType" Type="Int32" />
+    <Property Name="SourceTour" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Sys_CalendarRecord">
+    <Key>
+      <PropertyRef Name="RecordID" />
+      <PropertyRef Name="Type" />
+      <PropertyRef Name="UID" />
+    </Key>
+    <Property Name="RecordID" Type="Int64" Nullable="false" />
+    <Property Name="Type" Type="Int32" Nullable="false" />
+    <Property Name="UID" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="PlaceRequestRecords">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int64" Nullable="false" />
+    <Property Name="VisitStartTime" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="VisitEndTime" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="RequesterName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="RequesterOnbehalfof" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="RequestGroupID" Type="Int32" />
+    <Property Name="RequestSubGroupID" Type="Int32" />
+    <Property Name="RequesterFunctionTeam" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="RequesterBusinessID" Type="Int32" />
+    <Property Name="VisitorOrganizationName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="VisitorOrganizationSize" Type="Int64" />
+    <Property Name="VisitorIndustryID" Type="Int32" />
+    <Property Name="VisitorGroupSize" Type="Int64" />
+    <Property Name="VisitorLanguageID" Type="Byte" Nullable="false" />
+    <Property Name="RequestType" Type="Byte" Nullable="false" />
+    <Property Name="Status" Type="Byte" Nullable="false" />
+    <Property Name="BusinessPurpose" Type="String" MaxLength="2048" FixedLength="false" Unicode="true" />
+    <Property Name="BusinessImpact" Type="String" MaxLength="2048" FixedLength="false" Unicode="true" />
+    <Property Name="OPPID" Type="String" MaxLength="1024" FixedLength="false" Unicode="true" />
+    <Property Name="ExpectStartTime" Type="DateTime" Precision="0" />
+    <Property Name="ExpectEndTime" Type="DateTime" Precision="0" />
+    <Property Name="InterestTopic" Type="String" MaxLength="2048" FixedLength="false" Unicode="true" />
+    <Property Name="CompanyBackground" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="RequestTime" Type="DateTime" Precision="0" />
+    <Property Name="ApprovedBy" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ApprovedTime" Type="DateTime" Precision="3" />
+    <Property Name="UserInfoFile" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+</Schema>

@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DCUDataModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Dic_Business">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Deleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Dic_CustomSegment">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Deleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Dic_DCUUser">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Alias" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="PermissionType" Type="tinyint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Dic_EventTheme">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="Deleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Dic_EventType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="Deleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Dic_Horizontal">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Deleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Dic_Industry">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Deleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Dic_Language">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="tinyint" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Deleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Dic_OpportunityType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Deleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Dic_RequestGroup">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ParentID" Type="int" />
+    <Property Name="Deleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Dic_SaleStage">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Deleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Dic_Technology">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" />
+    <Property Name="Deleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PlaceRequestRecords">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" />
+    <Property Name="VisitStartTime" Type="smalldatetime" Nullable="false" />
+    <Property Name="VisitEndTime" Type="smalldatetime" Nullable="false" />
+    <Property Name="RequesterName" Type="nvarchar" MaxLength="256" />
+    <Property Name="RequesterOnbehalfof" Type="nvarchar" MaxLength="256" />
+    <Property Name="RequestGroupID" Type="int" />
+    <Property Name="RequestSubGroupID" Type="int" />
+    <Property Name="RequesterFunctionTeam" Type="nvarchar" MaxLength="256" />
+    <Property Name="RequesterBusinessID" Type="int" />
+    <Property Name="VisitorOrganizationName" Type="nvarchar" MaxLength="256" />
+    <Property Name="VisitorOrganizationSize" Type="bigint" />
+    <Property Name="VisitorIndustryID" Type="int" />
+    <Property Name="VisitorGroupSize" Type="bigint" />
+    <Property Name="VisitorLanguageID" Type="tinyint" Nullable="false" />
+    <Property Name="RequestType" Type="tinyint" Nullable="false" />
+    <Property Name="Status" Type="tinyint" Nullable="false" />
+    <Property Name="BusinessPurpose" Type="nvarchar" MaxLength="2048" />
+    <Property Name="BusinessImpact" Type="nvarchar" MaxLength="2048" />
+    <Property Name="OPPID" Type="nvarchar" MaxLength="1024" />
+    <Property Name="ExpectStartTime" Type="smalldatetime" />
+    <Property Name="ExpectEndTime" Type="smalldatetime" />
+    <Property Name="InterestTopic" Type="nvarchar" MaxLength="2048" />
+    <Property Name="CompanyBackground" Type="nvarchar(max)" />
+    <Property Name="RequestTime" Type="smalldatetime" />
+    <Property Name="ApprovedBy" Type="nvarchar" MaxLength="256" />
+    <Property Name="ApprovedTime" Type="datetime" />
+    <Property Name="UserInfoFile" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Set_Holiday">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="HolidayType" Type="nvarchar" MaxLength="64" Nullable="false" />
+    <Property Name="IsWorkDay" Type="bit" Nullable="false" />
+    <Property Name="Remarks" Type="nvarchar" MaxLength="1024" />
+  </EntityType>
+  <EntityType Name="Set_ShowTime">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Week" Type="tinyint" Nullable="false" />
+    <Property Name="StartTime" Type="time" Precision="7" Nullable="false" />
+    <Property Name="EndTime" Type="time" Precision="7" Nullable="false" />
+    <Property Name="SettingType" Type="tinyint" Nullable="false" />
+    <Property Name="IsRegular" Type="bit" Nullable="false" />
+    <Property Name="SpecifiedDate" Type="date" />
+    <Property Name="Available" Type="bit" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="Remarks" Type="nvarchar" MaxLength="128" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DCUBooking.dbo.Sys_CalendarRecord' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Sys_CalendarRecord">
+    <Key>
+      <PropertyRef Name="RecordID" />
+      <PropertyRef Name="Type" />
+      <PropertyRef Name="UID" />
+    </Key>
+    <Property Name="RecordID" Type="bigint" Nullable="false" />
+    <Property Name="Type" Type="int" Nullable="false" />
+    <Property Name="UID" Type="nvarchar" MaxLength="256" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Sys_MailTask">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RecordID" Type="bigint" Nullable="false" />
+    <Property Name="RequestType" Type="int" Nullable="false" />
+    <Property Name="EmailType" Type="int" Nullable="false" />
+    <Property Name="CreateTime" Type="datetime" Nullable="false" />
+    <Property Name="SendTime" Type="datetime" Nullable="false" />
+    <Property Name="Status" Type="tinyint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Sys_OperationLogs">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BusinessType" Type="int" Nullable="false" />
+    <Property Name="OperationType" Type="int" Nullable="false" />
+    <Property Name="RecordID" Type="bigint" Nullable="false" />
+    <Property Name="Operator" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreateTime" Type="datetime" Nullable="false" />
+    <Property Name="Remarks" Type="nvarchar" MaxLength="1024" />
+  </EntityType>
+  <EntityType Name="Sys_RoomsReservedInfo">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RecordID" Type="bigint" Nullable="false" />
+    <Property Name="PlaceID" Type="tinyint" Nullable="false" />
+    <Property Name="VisitDate" Type="date" Nullable="false" />
+    <Property Name="StartTime" Type="time" Precision="7" Nullable="false" />
+    <Property Name="EndTime" Type="time" Precision="7" Nullable="false" />
+    <Property Name="LockedTime" Type="datetime" Nullable="false" />
+    <Property Name="TourType" Type="int" />
+    <Property Name="SourceTour" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="DCUDataModelStoreContainer">
+    <EntitySet Name="Dic_Business" EntityType="Self.Dic_Business" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Dic_CustomSegment" EntityType="Self.Dic_CustomSegment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Dic_DCUUser" EntityType="Self.Dic_DCUUser" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Dic_EventTheme" EntityType="Self.Dic_EventTheme" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Dic_EventType" EntityType="Self.Dic_EventType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Dic_Horizontal" EntityType="Self.Dic_Horizontal" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Dic_Industry" EntityType="Self.Dic_Industry" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Dic_Language" EntityType="Self.Dic_Language" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Dic_OpportunityType" EntityType="Self.Dic_OpportunityType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Dic_RequestGroup" EntityType="Self.Dic_RequestGroup" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Dic_SaleStage" EntityType="Self.Dic_SaleStage" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Dic_Technology" EntityType="Self.Dic_Technology" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PlaceRequestRecords" EntityType="Self.PlaceRequestRecords" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Set_Holiday" EntityType="Self.Set_Holiday" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Set_ShowTime" EntityType="Self.Set_ShowTime" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sys_MailTask" EntityType="Self.Sys_MailTask" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sys_OperationLogs" EntityType="Self.Sys_OperationLogs" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sys_RoomsReservedInfo" EntityType="Self.Sys_RoomsReservedInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sys_CalendarRecord" EntityType="Self.Sys_CalendarRecord" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Sys_CalendarRecord].[RecordID] AS [RecordID], 
+    [Sys_CalendarRecord].[Type] AS [Type], 
+    [Sys_CalendarRecord].[UID] AS [UID]
+    FROM [dbo].[Sys_CalendarRecord] AS [Sys_CalendarRecord]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

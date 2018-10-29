@@ -1,0 +1,8 @@
+D:\Projects\MCCOMail\MCCOMailHandler\MCCOMailHandler\bin\Debug\MCCOMailHandler.exe.config
+D:\Projects\MCCOMail\MCCOMailHandler\MCCOMailHandler\bin\Debug\MCCOMailHandler.exe
+D:\Projects\MCCOMail\MCCOMailHandler\MCCOMailHandler\bin\Debug\MCCOMailHandler.pdb
+D:\Projects\MCCOMail\MCCOMailHandler\MCCOMailHandler\bin\Debug\Microsoft.Exchange.WebServices.dll
+D:\Projects\MCCOMail\MCCOMailHandler\MCCOMailHandler\obj\Debug\MCCOMailHandler.exe
+D:\Projects\MCCOMail\MCCOMailHandler\MCCOMailHandler\obj\Debug\MCCOMailHandler.pdb
+D:\Projects\MCCOMail\MCCOMailHandler\MCCOMailHandler\bin\Debug\Microsoft.Exchange.WebServices.xml
+D:\Projects\MCCOMail\MCCOMailHandler\MCCOMailHandler\obj\Debug\MCCOMailHandler.csprojResolveAssemblyReference.cache
