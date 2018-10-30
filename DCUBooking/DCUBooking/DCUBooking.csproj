@@ -52,6 +52,9 @@
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net\log4net.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
       <Private>True</Private>
@@ -159,18 +162,19 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\CommonController.cs" />
+    <Compile Include="Controllers\Dic_IndustryController.cs" />
     <Compile Include="Controllers\Dic_LanguageController.cs" />
+    <Compile Include="Controllers\Dic_RequestGroupController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\Set_HolidayController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helper\LoggerHelper.cs" />
     <Compile Include="Models\DCUBooking.Context.cs" />
     <Compile Include="Models\Dic_Business.cs" />
     <Compile Include="Models\Dic_CustomSegment.cs" />
     <Compile Include="Models\Dic_DCUUser.cs" />
-    <Compile Include="Models\Dic_EventTheme.cs" />
-    <Compile Include="Models\Dic_EventType.cs" />
     <Compile Include="Models\Dic_Horizontal.cs" />
     <Compile Include="Models\Dic_Industry.cs" />
     <Compile Include="Models\Dic_Language.cs" />
@@ -270,6 +274,7 @@
     <Content Include="font-awesome\scss\_screen-reader.scss" />
     <Content Include="font-awesome\scss\_stacked.scss" />
     <Content Include="font-awesome\scss\_variables.scss" />
+    <Content Include="log4net.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -311,6 +316,14 @@
     <Content Include="Views\Dic_Language\Delete.cshtml" />
     <Content Include="Views\Dic_Language\Edit.cshtml" />
     <Content Include="Views\Dic_Language\Index.cshtml" />
+    <Content Include="Views\Dic_RequestGroup\Create.cshtml" />
+    <Content Include="Views\Dic_RequestGroup\Delete.cshtml" />
+    <Content Include="Views\Dic_RequestGroup\Edit.cshtml" />
+    <Content Include="Views\Dic_RequestGroup\Index.cshtml" />
+    <Content Include="Views\Dic_Industry\Create.cshtml" />
+    <Content Include="Views\Dic_Industry\Delete.cshtml" />
+    <Content Include="Views\Dic_Industry\Edit.cshtml" />
+    <Content Include="Views\Dic_Industry\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

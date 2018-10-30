@@ -1,9 +1,7 @@
 ﻿namespace DCUBooking.Controllers
 {
+    using DCUBooking.Helper;
     using DCUBooking.Models;
-    using System.Data.Entity;
-    using System.Linq;
-    using System.Net;
     using System.Web.Mvc;
 
     public class CommonController : Controller
@@ -26,6 +24,7 @@
             int ret = db.Database.ExecuteSqlCommand(sql);
             if (ret > 0)
             {
+                LoggerHelper.Info("Recover dictionary item successfully. Table:[" + table + "], Item:["+ name + "]");
                 return true;
             }
 

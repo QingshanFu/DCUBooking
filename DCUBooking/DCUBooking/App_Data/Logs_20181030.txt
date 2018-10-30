@@ -1,0 +1,6 @@
+
+[Time]:2018-10-30 18:44:15,479 [Thread ID]:12 [Log Level]:INFO  
+    FAREAST\v-qingfu - Recover dictionary item successfully. Table:[Dic_Language], Item:[German] 
+
+[Time]:2018-10-30 20:16:19,898 [Thread ID]:10 [Log Level]:INFO  
+    FAREAST\v-qingfu - Recover dictionary item successfully. Table:[Dic_Industry], Item:[Robot Me] 

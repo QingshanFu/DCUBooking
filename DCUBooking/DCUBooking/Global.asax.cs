@@ -12,6 +12,10 @@ namespace DCUBooking
     {
         protected void Application_Start()
         {
+            log4net.Config.XmlConfigurator.Configure(
+               new System.IO.FileInfo(AppDomain.CurrentDomain.BaseDirectory + "\\log4net.config")
+            );
+
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);

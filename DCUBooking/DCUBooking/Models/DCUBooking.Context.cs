@@ -27,8 +27,6 @@ namespace DCUBooking.Models
         public virtual DbSet<Dic_Business> Dic_Business { get; set; }
         public virtual DbSet<Dic_CustomSegment> Dic_CustomSegment { get; set; }
         public virtual DbSet<Dic_DCUUser> Dic_DCUUser { get; set; }
-        public virtual DbSet<Dic_EventTheme> Dic_EventTheme { get; set; }
-        public virtual DbSet<Dic_EventType> Dic_EventType { get; set; }
         public virtual DbSet<Dic_Horizontal> Dic_Horizontal { get; set; }
         public virtual DbSet<Dic_Industry> Dic_Industry { get; set; }
         public virtual DbSet<Dic_Language> Dic_Language { get; set; }

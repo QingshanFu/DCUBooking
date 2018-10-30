@@ -48,10 +48,11 @@ D:\Projects\DCUBooking\DCUBooking\DCUBooking\bin\System.Web.WebPages.Deployment.
 D:\Projects\DCUBooking\DCUBooking\DCUBooking\bin\System.Web.WebPages.Razor.xml
 D:\Projects\DCUBooking\DCUBooking\DCUBooking\bin\Antlr3.Runtime.pdb
 D:\Projects\DCUBooking\DCUBooking\DCUBooking\bin\Newtonsoft.Json.xml
-D:\Projects\DCUBooking\DCUBooking\DCUBooking\obj\Debug\DCUBooking.csprojResolveAssemblyReference.cache
 D:\Projects\DCUBooking\DCUBooking\DCUBooking\obj\Debug\DCUBooking.dll
 D:\Projects\DCUBooking\DCUBooking\DCUBooking\obj\Debug\DCUBooking.pdb
 D:\Projects\DCUBooking\DCUBooking\DCUBooking\bin\EntityFramework.dll
 D:\Projects\DCUBooking\DCUBooking\DCUBooking\bin\EntityFramework.SqlServer.dll
 D:\Projects\DCUBooking\DCUBooking\DCUBooking\bin\EntityFramework.xml
 D:\Projects\DCUBooking\DCUBooking\DCUBooking\bin\EntityFramework.SqlServer.xml
+D:\Projects\DCUBooking\DCUBooking\DCUBooking\bin\log4net.dll
+D:\Projects\DCUBooking\DCUBooking\DCUBooking\obj\Debug\DCUBooking.csprojResolveAssemblyReference.cache

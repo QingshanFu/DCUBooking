@@ -9,14 +9,32 @@
 
 namespace DCUBooking.Models
 {
-    using System;
-    using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
+    using System.ComponentModel.DataAnnotations.Schema;
     
     public partial class Dic_RequestGroup
     {
+        [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ID { get; set; }
+
+        [Required]
+        [StringLength(50)]
         public string Name { get; set; }
-        public Nullable<int> ParentID { get; set; }
-        public bool Deleted { get; set; }
+
+        public int? ParentID { get; set; }
+
+        private string parentName;
+        public string ParentName
+        {
+            get
+            {
+                return parentName;
+            }
+        }
+
+        public void SetParentName(Dic_RequestGroup rg)
+        {
+            parentName = rg.Name;
+        }
     }
 }

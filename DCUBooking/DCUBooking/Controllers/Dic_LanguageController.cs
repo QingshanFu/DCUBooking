@@ -1,5 +1,5 @@
 ﻿namespace DCUBooking.Controllers
-{
+{    
     using DCUBooking.Models;
     using System.Data.Entity;
     using System.Linq;
